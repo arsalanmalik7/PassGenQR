@@ -1,0 +1,36 @@
+.items{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.box{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:450px) {
+    .items{
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+    .box{
+        padding: 0.8rem;
+        width: 90%;
+    }
+}
+
+.content{
+    box-sizing: border-box;
+    /* display: flex; */
+    justify-content: center;
+    padding: 2rem;
+    background-color: bisque;
+}
