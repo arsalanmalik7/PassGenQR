@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Password from './components/password/Password';
-import PhoneValidation from './components/phone validation/ph-validate';
+import ConvertCurrency from './components/convert currency/convert-currency';
 import QrCode from './components/QR code/Qrcode';
 import { Route, Routes, Link, Navigate } from 'react-router-dom';
 import './App.css';
@@ -42,7 +42,7 @@ function App() {
               wrapped
             />
             <Tab value="two" label={<Link className='items' to='/qrCode'>QR Code</Link>} />
-            <Tab value="three" label={<Link className='items' to='/phoneValidation'>Phone Validation</Link>} />
+            <Tab value="three" label={<Link className='items' to='/convertCurrency'>Convert Currency</Link>} />
           </Tabs>
         </Box>
       </div>
@@ -52,7 +52,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Password />} />
           <Route path='/qrCode' element={<QrCode />} />
-          <Route path='/phoneValidation' element={<PhoneValidation />} />
+          <Route path='/convertCurrency' element={<ConvertCurrency />} />
           <Route path='*' element={<Navigate to='/' replace={true} />} />
         </Routes>
       </div>

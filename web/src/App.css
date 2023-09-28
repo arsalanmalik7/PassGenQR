@@ -28,8 +28,9 @@
 }
 
 .content{
+    margin: 1.5rem;
     box-sizing: border-box;
-    /* display: flex; */
+    border-radius: 1rem;
     justify-content: center;
     padding: 2rem;
     background-color: bisque;

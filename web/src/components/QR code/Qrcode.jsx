@@ -54,7 +54,7 @@ const QrCode = () => {
         <>
             <h1 className='heading'>QR Code Generator</h1>
             <form className='qrcode' onSubmit={getQrcode}>
-                <TextField fullWidth ref={inputRef} id="fullWidth" label="Fill" variant="filled" />
+                <TextField fullWidth ref={inputRef} id="fullWidth" label="Fill" variant="filled" required />
                 <Button type='submit' variant="contained">Get QR Code</Button>
             </form>
             {toggle ?
